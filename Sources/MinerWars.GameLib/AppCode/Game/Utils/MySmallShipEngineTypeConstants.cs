@@ -62,17 +62,20 @@ namespace MinerWars.AppCode.Game.Utils
             };
 
             // modifies all engine fuel consumption
-            float fuelConsumptionModifier = 0.75f;
+            float fuelConsumptionModifier = 0.5f;
 
             // modifies all engines force
-            float forceModifier = 3;
-            
+            float forceModifier = 2;
+
+            // modifies all engines speed
+            float speedModifier = 2;
+
             // Chemical Engines
             EngineProperties.Add((int)MyMwcObjectBuilder_SmallShip_Engine_TypesEnum.Chemical_1, new MySmallShipEngineTypeProperties
             {
                 Force = 900 * forceModifier,
                 FuelConsumption = 0.1f * fuelConsumptionModifier,
-                MaxSpeed = 100,
+                MaxSpeed = 100 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.4f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.HELIUM,
@@ -90,7 +93,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1000 * forceModifier,
                 FuelConsumption = 0.15f * fuelConsumptionModifier,
-                MaxSpeed = 105,
+                MaxSpeed = 105 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.5f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.HELIUM,
@@ -108,7 +111,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1100 * forceModifier,
                 FuelConsumption = 0.2f * fuelConsumptionModifier,
-                MaxSpeed = 110,
+                MaxSpeed = 110 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.6f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.HELIUM,
@@ -126,7 +129,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1200 * forceModifier,
                 FuelConsumption = 0.25f * fuelConsumptionModifier,
-                MaxSpeed = 115,
+                MaxSpeed = 115 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.7f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.HELIUM,
@@ -144,7 +147,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1300 * forceModifier,
                 FuelConsumption = 0.3f * fuelConsumptionModifier,
-                MaxSpeed = 120,
+                MaxSpeed = 120 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.8f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.HELIUM,
@@ -164,7 +167,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1100 * forceModifier,
                 FuelConsumption = 0.1f * fuelConsumptionModifier,
-                MaxSpeed = 140,
+                MaxSpeed = 140 * speedModifier,
                 AfterburnerSpeedMultiplier = 2.1f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.URANITE,
@@ -182,7 +185,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1200 * forceModifier,
                 FuelConsumption = 0.2f * fuelConsumptionModifier,
-                MaxSpeed = 145,
+                MaxSpeed = 145 * speedModifier,
                 AfterburnerSpeedMultiplier = 2.2f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.URANITE,
@@ -200,7 +203,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1300 * forceModifier,
                 FuelConsumption = 0.3f * fuelConsumptionModifier,
-                MaxSpeed = 150,
+                MaxSpeed = 150 * speedModifier,
                 AfterburnerSpeedMultiplier = 2.3f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.URANITE,
@@ -218,7 +221,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1400 * forceModifier,
                 FuelConsumption = 0.35f * fuelConsumptionModifier,
-                MaxSpeed = 155,
+                MaxSpeed = 155 * speedModifier,
                 AfterburnerSpeedMultiplier = 2.4f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.URANITE,
@@ -236,7 +239,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1500 * forceModifier,
                 FuelConsumption = 0.4f * fuelConsumptionModifier,
-                MaxSpeed = 160,
+                MaxSpeed = 160 * speedModifier,
                 AfterburnerSpeedMultiplier = 2.5f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.URANITE,
@@ -256,7 +259,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1000 * forceModifier,
                 FuelConsumption = 0.15f * fuelConsumptionModifier,
-                MaxSpeed = 130,
+                MaxSpeed = 130 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.7f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.ICE,
@@ -274,7 +277,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1075 * forceModifier,
                 FuelConsumption = 0.25f * fuelConsumptionModifier,
-                MaxSpeed = 135,
+                MaxSpeed = 135 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.8f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.ICE,
@@ -292,7 +295,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1150 * forceModifier,
                 FuelConsumption = 0.35f * fuelConsumptionModifier,
-                MaxSpeed = 140,
+                MaxSpeed = 140 * speedModifier,
                 AfterburnerSpeedMultiplier = 1.9f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.ICE,
@@ -310,7 +313,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1225 * forceModifier,
                 FuelConsumption = 0.45f * fuelConsumptionModifier,
-                MaxSpeed = 145,
+                MaxSpeed = 145 * speedModifier,
                 AfterburnerSpeedMultiplier = 2.0f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.ICE,
@@ -328,7 +331,7 @@ namespace MinerWars.AppCode.Game.Utils
             {
                 Force = 1300 * forceModifier,
                 FuelConsumption = 0.55f * fuelConsumptionModifier,
-                MaxSpeed = 150,
+                MaxSpeed = 150 * speedModifier,
                 AfterburnerSpeedMultiplier = 2.1f,
                 AfterburnerConsumptionMultiplier = 2.0f,
                 FuelType = MyMwcObjectBuilder_Ore_TypesEnum.ICE,

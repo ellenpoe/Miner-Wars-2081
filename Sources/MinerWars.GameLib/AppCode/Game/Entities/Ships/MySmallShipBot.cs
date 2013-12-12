@@ -311,7 +311,7 @@ namespace MinerWars.AppCode.Game.Entities
         /// <summary>
         /// Modifies bots speed 1.0 means normal speed, 0.0 means bot wont move
         /// </summary>
-        public float SpeedModifier = 1.0f;
+        public float SpeedModifier = 0.8f;
 
         private static string m_pilotDeadString;
 

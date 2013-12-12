@@ -3756,10 +3756,12 @@ namespace MinerWars.AppCode.Game.Entities
 
             // Slowdown movement over a fixed velocity (e.g. 120 m/s) even if engine slowdown is off
             // let's pretend it dissipates as heat or something
+            /*
             if ((!Config.MovementSlowdown.On || !Config.Engine.On) && localVelocity.Length() > activeEngineProps.MaxSpeed)
             {
                 slowdownForce -= localVelocity * activeEngineProps.Force * maxSpeedMultiplierDecelerate * physicsProperties.MultiplierMovement;
             }
+            */
 
             m_engineTorque -= localAngularVelocity * Physics.Mass * physicsProperties.MultiplierRotationDecelerate;
 
